@@ -3,84 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tentang Kami | Kelas Hemat Energi</title>
+  <title>Tentang Kampanye | Kelas Hemat Energi</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
     <div class="container navbar-inner">
-      <a href="index.html" class="logo">⚡ Kelas Hemat Energi</a>
+      <a href="index.html" class="logo">
+        <span class="logo-badge">⚡</span>
+        Kelas Hemat <span>Energi</span>
+      </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
 
       <nav class="nav-menu" id="navMenu">
         <a href="index.html">Beranda</a>
         <a href="tentang.html" class="active">Tentang</a>
-        <a href="#" class="disabled">Data & Fakta</a>
-        <a href="#" class="disabled">Aksi</a>
+        <a href="data.html">Data & Fakta</a>
+        <a href="aksi.html">Aksi & Solusi</a>
+        <a href="aksi.html" class="nav-cta">Mulai Berhemat</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Page Header -->
     <section class="page-header">
       <div class="container">
-        <h1>Tentang Kampanye</h1>
-        <p>Website ini dibuat untuk mengajak seluruh warga sekolah menjaga energi secara bersama-sama.</p>
+        <span class="badge badge-green" style="margin-bottom: 12px;">🌱 Informasi Proyek Kolaborasi</span>
+        <h1>Tentang Kampanye Konservasi Energi</h1>
+        <p>
+          Inisiatif kolaboratif siswa untuk menumbuhkan budaya peduli lingkungan, efisiensi energi listrik, dan tanggung jawab sosial di sekolah.
+        </p>
       </div>
     </section>
 
-    <section class="content">
-      <div class="container content-grid">
+    <!-- Main Content -->
+    <section class="section">
+      <div class="container" style="display: grid; grid-template-columns: 1.6fr 0.9fr; gap: 40px; align-items: start;">
         <article>
-          <h2>Latar Belakang</h2>
-          <p>
-            Sekolah menggunakan listrik setiap hari untuk penerangan, komputer, proyektor, kipas, dan
-            perangkat lain. Sayangnya, kebiasaan kecil seperti meninggalkan lampu menyala saat ruangan
-            kosong atau membiarkan charger terpasang dapat membuat pemakaian energi menjadi boros.
-          </p>
-          <p>
-            Penerangan menyumbang hampir 26% penggunaan listrik di sekolah, sehingga kebiasaan mematikan
-            lampu yang tidak diperlukan dapat memberi penghematan nyata. [4] Penghematan energi juga
-            membantu mengurangi jejak karbon dari pembangkit listrik. [8]
-          </p>
+          <div class="card" style="margin-bottom: 28px;">
+            <h2 style="font-family: var(--font-heading); color: var(--primary-dark); font-size: 1.6rem; margin-bottom: 14px;">
+              Latar Belakang Proyek
+            </h2>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 14px;">
+              Sekolah modern menggunakan daya listrik dalam jumlah besar setiap harinya—mulai dari penerangan kelas, laboratorium komputer, proyektor, kipas angin, hingga pendingin udara (AC). Sayangnya, seringkali kita abai terhadap kebiasaan-kebiasaan kecil: meninggalkan lampu menyala di ruangan kosong, membiarkan adaptor charger terus menancap, atau tidak mematikan monitor PC setelah sesi praktik selesai.
+            </p>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+              Berdasarkan kajian efisiensi energi fasilitas pendidikan, sektor penerangan menyumbang sekitar <strong>26% dari konsumsi listrik sekolah</strong>. Dengan mengubah kebiasaan mematikan lampu yang tidak dipakai dan mengoptimalkan cahaya alami matahari, sekolah dapat menekan biaya operasional secara signifikan serta meminimalisir emisi karbon pembangkit listrik.
+            </p>
+          </div>
 
-          <h2>Tujuan Kampanye</h2>
-          <ul>
-            <li>Menumbuhkan kebiasaan hemat energi di lingkungan sekolah.</li>
-            <li>Menampilkan data dan fakta sebagai dasar ajakan yang masuk akal.</li>
-            <li>Mendorong aksi sederhana yang bisa dilakukan siswa, guru, dan staf.</li>
-            <li>Membuat hemat energi terasa mudah, bermanfaat, dan menjadi tanggung jawab bersama.</li>
-          </ul>
+          <div class="card" style="margin-bottom: 28px;">
+            <h2 style="font-family: var(--font-heading); color: var(--primary-dark); font-size: 1.6rem; margin-bottom: 14px;">
+              Tujuan Kampanye
+            </h2>
+            <ul style="padding-left: 20px; color: var(--text-muted); font-size: 0.98rem; line-height: 1.9;">
+              <li><strong>Edukasi Berbasis Bukti:</strong> Menyajikan data nyata hasil kuesioner 636 siswa Kelas XI sebagai dasar ajakan yang objektif dan masuk akal.</li>
+              <li><strong>Membangun Kebiasaan Baik:</strong> Membiasakan seluruh warga sekolah (siswa, guru, dan tenaga kependidikan) untuk disiplin mematikan listrik yang tidak dipakai.</li>
+              <li><strong>Mendorong Kolaborasi Antar-Siswa:</strong> Menumbuhkan keberanian saling mengingatkan dan menegur rekan yang lupa mematikan peralatan listrik.</li>
+              <li><strong>Dampak Lingkungan Nyata:</strong> Mengurangi emisi gas rumah kaca dari sektor ketenagalistrikan demi kelestarian bumi masa depan.</li>
+            </ul>
+          </div>
 
-          <h2>Identitas Pembuat</h2>
-          <p>
-            Website ini dibuat oleh <strong>Kelompok [nama kelompok]</strong>, kelas
-            <strong>PPLG XI-[1/2/3/4]</strong>. Proyek ini merupakan bagian dari proyek kolaboratif
-            tema <strong>Konservasi dan Penghematan Energi</strong>, dengan dukungan mata pelajaran
-            PPLG, KIK, PABP, dan mata pelajaran terkait lainnya.
-          </p>
+          <div class="card card-top-accent">
+            <h2 style="font-family: var(--font-heading); color: var(--primary-dark); font-size: 1.6rem; margin-bottom: 14px;">
+              Integrasi Mata Pelajaran & Identitas
+            </h2>
+            <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7; margin-bottom: 16px;">
+              Website ini dikembangkan sebagai bagian dari <strong>Proyek Kolaboratif Konservasi dan Penghematan Energi</strong> pada semester ini, yang memadukan capaian pembelajaran dari berbagai mata pelajaran:
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 0.9rem;">
+              <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-sm);">
+                <strong style="color: var(--primary-dark);">💻 PPLG:</strong>
+                <p style="color: var(--text-muted); margin-top: 4px;">Perancangan arsitektur web, visualisasi data, algoritma kalkulator, dan interaktivitas frontend responsif.</p>
+              </div>
+              <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-sm);">
+                <strong style="color: var(--primary-dark);">🤝 KIK & Kolaborasi:</strong>
+                <p style="color: var(--text-muted); margin-top: 4px;">Kerja sama tim, komunikasi publik, serta penyusunan pesan kampanye sosial yang persuasif.</p>
+              </div>
+              <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-sm);">
+                <strong style="color: var(--primary-dark);">🕌 PABP:</strong>
+                <p style="color: var(--text-muted); margin-top: 4px;">Penanaman nilai tanggung jawab menjaga alam, amanah lingkungan, dan larangan berperilaku mubazir/boros.</p>
+              </div>
+              <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-sm);">
+                <strong style="color: var(--primary-dark);">📊 IPAS / Matematika:</strong>
+                <p style="color: var(--text-muted); margin-top: 4px;">Analisis data statistik survei, konversi satuan energi (kWh ke Rupiah dan emisi CO₂).</p>
+              </div>
+            </div>
+            <p style="margin-top: 18px; font-size: 0.92rem; color: var(--text-muted);">
+              Dibuat dengan bangga oleh: <strong>Muhammad Rezky Arsy Ramadhan</strong> & Tim Siswa <strong>PPLG XI SMK Wikrama Bogor</strong>.
+            </p>
+          </div>
         </article>
 
-        <aside class="aside-card">
-          <h3>Ayo mulai hari ini</h3>
-          <p>Matikan lampu saat keluar kelas.</p>
-          <p>Gunakan cahaya matahari bila cukup.</p>
-          <p>Matikan proyektor setelah pelajaran selesai.</p>
-          <p>Cabut charger yang tidak dipakai.</p>
+        <!-- Sidebar / Aside -->
+        <aside>
+          <div class="card card-top-accent accent-yellow" style="margin-bottom: 24px;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">🌟</div>
+            <h3 style="margin-bottom: 12px;">Mulai dari Diri Sendiri</h3>
+            <ul style="list-style: none; font-size: 0.92rem; color: var(--text-muted); line-height: 1.8;">
+              <li>✓ Matikan lampu saat meninggalkan ruangan</li>
+              <li>✓ Buka jendela untuk cahaya alami</li>
+              <li>✓ Matikan proyektor kelas usai presentasi</li>
+              <li>✓ Lepaskan charger setelah baterai penuh</li>
+              <li>✓ Ingatkan teman di sebelahmu</li>
+            </ul>
+            <a href="aksi.html" class="btn btn-primary" style="width: 100%; margin-top: 20px; font-size: 0.92rem;">Buka Checklist Aksi</a>
+          </div>
+
+          <div class="card">
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px;">📊 Lihat Data Survei</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;">
+              Ingin tahu bagaimana performa rombel dan jurusanmu dalam angket perilaku hemat energi? Tinjau laporannya sekarang.
+            </p>
+            <a href="data.html" class="btn btn-outline-dark" style="width: 100%; font-size: 0.92rem;">Buka Halaman Data ➜</a>
+          </div>
         </aside>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p><strong>Kelas Hemat Energi</strong> — Proyek Kolaboratif PPLG XI</p>
-      <p>© 2026 Kelompok [isi nama kelompok]</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>⚡ Kelas Hemat Energi</h3>
+          <p>
+            Proyek Kolaboratif Konservasi dan Penghematan Energi Siswa Kelas XI SMK Wikrama Bogor.
+            Menghubungkan mata pelajaran PPLG, KIK, PABP, dan mapel lainnya dalam solusi digital berkelanjutan.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigasi Halaman</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kampanye</a></li>
+            <li><a href="data.html">Data & Fakta (Fase 2)</a></li>
+            <li><a href="aksi.html">Aksi & Kalkulator</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Kontak & Informasi</h4>
+          <ul>
+            <li><span style="opacity: 0.85;">SMK Wikrama Bogor</span></li>
+            <li><span style="opacity: 0.85;">PPLG XI — Angkatan 2026</span></li>
+            <li><span style="opacity: 0.85;">Data: 636 Responden Terdata</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kelas Hemat Energi — Proyek Kolaboratif PPLG XI. Semua Hak Cipta Dilindungi.</p>
+      </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
