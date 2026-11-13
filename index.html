@@ -3,77 +3,200 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoSave | Kampanye Konservasi Energi</title>
+  <title>GoSave | Kampanye Konservasi & Efisiensi Energi</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
     <div class="container navbar-inner">
-      <a href="index.html" class="logo">GoSave</a>
+      <a href="index.html" class="logo">
+        <span class="logo-badge">⚡</span>
+        Go<span>Save</span>
+      </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
 
       <nav class="nav-menu" id="navMenu">
         <a href="index.html" class="active">Beranda</a>
         <a href="tentang.html">Tentang</a>
+        <a href="data.html">Data & Fakta</a>
+        <a href="aksi.html">Aksi & Solusi</a>
+        <a href="aksi.html" class="nav-cta">Mulai Berhemat</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="badge">Kampanye Konservasi & Penghematan Energi</p>
+          <span class="badge badge-yellow">⚡ Kampanye Konservasi & Efisiensi Energi</span>
           <h1>Kebiasaan Kecil, <span>Listrik Terjaga</span>, Bumi Lebih Baik.</h1>
           <p>
-            Listrik sering terasa “gratis” karena tinggal menyalakan saklar. Padahal, lampu dan perangkat
-            elektronik yang dibiarkan menyala memakai energi terus-menerus. Ayo mulai dari ruang kelas:
-            matikan yang tidak dipakai, cabut charger, dan manfaatkan cahaya alami.
+            Listrik sering terasa tak terbatas karena tinggal menekan saklar. Padahal, perangkat yang dibiarkan menyala di sekolah menghabiskan daya secara konstan. Mari mulai dari ruang kelas: matikan yang tak terpakai, cabut colokan charger, dan manfaatkan terangnya cahaya matahari.
           </p>
           <div class="hero-buttons">
-            <a href="tentang.html" class="btn primary">Kenapa Penting?</a>
-            <a href="#" class="btn outline disabled">Lihat Data</a>
+            <a href="data.html" class="btn btn-primary">Lihat Data Survei (Fase 2) ➜</a>
+            <a href="tentang.html" class="btn btn-outline">Kenapa Penting?</a>
           </div>
         </div>
 
         <div class="hero-image">
-          <img src="https://i.pinimg.com/1200x/13/e6/e3/13e6e323cbdf328b37ad649fc49e296b.jpg" />
+          <img src="assets/hero-energy.svg" alt="Ilustrasi Kampanye Kelas Hemat Energi Siswa" />
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div class="container stats-grid">
-        <div class="stat-card">
-          <h3>Lampu</h3>
-          <p>Matikan saat ruangan kosong atau cukup terang dengan cahaya matahari.</p>
+    <!-- Quick Stats Bar (Data Real dari Kuesioner) -->
+    <div class="container">
+      <div class="quick-stats-bar">
+        <div class="quick-stats-grid">
+          <div class="quick-stat-item">
+            <div class="quick-stat-icon">👥</div>
+            <div class="quick-stat-data">
+              <div class="val">636 Siswa</div>
+              <div class="lbl">Responden Terverifikasi (99.4%)</div>
+            </div>
+          </div>
+
+          <div class="quick-stat-item">
+            <div class="quick-stat-icon">⭐</div>
+            <div class="quick-stat-data">
+              <div class="val">3.36 / 4.00</div>
+              <div class="lbl">Rata-rata Skor (Sangat Baik)</div>
+            </div>
+          </div>
+
+          <div class="quick-stat-item">
+            <div class="quick-stat-icon">📈</div>
+            <div class="quick-stat-data">
+              <div class="val">96.2%</div>
+              <div class="lbl">Perilaku Baik & Sangat Baik</div>
+            </div>
+          </div>
+
+          <div class="quick-stat-item">
+            <div class="quick-stat-icon">🏫</div>
+            <div class="quick-stat-data">
+              <div class="val">18 Rombel</div>
+              <div class="lbl">7 Jurusan Terlibat Aktif</div>
+            </div>
+          </div>
         </div>
-        <div class="stat-card">
-        <h3>Air</h3>
-          <p>Matikan keran saat tidak terpakai.</p>
+      </div>
+    </div>
+
+    <!-- 3 Pilar Fokus Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green">Titik Kritis Penghematan</span>
+          <h2>3 Kebiasaan Kunci di Lingkungan Sekolah</h2>
+          <p>Tiga langkah mudah yang berdampak besar dalam menekan tagihan listrik dan mengurangi emisi karbon sekolah.</p>
         </div>
-        <div class="stat-card">
-          <h3>Perangkat</h3>
-          <p>Matikan komputer, proyektor, kipas, dan printer setelah dipakai.</p>
+
+        <div class="cards-grid">
+          <div class="card card-top-accent">
+            <div class="card-icon">💡</div>
+            <h3>Penerangan Cerdas</h3>
+            <p>
+              Penerangan menyumbang hingga 26% dari total konsumsi listrik sekolah. Buka tirai kelas di pagi hari dan matikan lampu bila ruangan kosong atau saat sinar matahari mencukupi.
+            </p>
+          </div>
+
+          <div class="card card-top-accent accent-yellow">
+            <div class="card-icon">🖥️</div>
+            <h3>Perangkat & Lab Komputer</h3>
+            <p>
+              Komputer lab, monitor eksternal, dan proyektor yang dibiarkan menyala saat jeda istirahat membuang puluhan kWh setiap minggunya. Selalu aktifkan mode hemat daya dan matikan setelah jam pelajaran.
+            </p>
+          </div>
+
+          <div class="card card-top-accent accent-blue">
+            <div class="card-icon">🔌</div>
+            <h3>Cabut Colokan & Steker</h3>
+            <p>
+              Berdasarkan hasil angket, 92% siswa sudah rajin mencabut colokan (P06: 3.45). Pertahankan kebiasaan ini agar adaptor charger tidak terus menyedot arus semu (phantom power).
+            </p>
+          </div>
         </div>
-        <div class="stat-card">
-          <h3>Charger</h3>
-          <p>Cabut charger ketika baterai penuh atau saat tidak digunakan.</p>
+      </div>
+    </section>
+
+    <!-- Teaser Hasil Survei Data Fase 2 -->
+    <section class="section section-alt">
+      <div class="container">
+        <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 48px; border: 1px solid var(--border); box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom: 12px;">Pembaruan Fase 2</span>
+            <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--primary-dark); margin-bottom: 16px;">
+              Data Kuesioner Sekolah Sudah Dibuka!
+            </h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+              Kini kamu bisa melihat visualisasi data interaktif dari angket perilaku hemat energi 636 siswa: tinjau grafik 10 butir pernyataan, temukan posisi ranking jurusanmu, dan cari skor rombelmu dengan fitur pencarian real-time!
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="data.html" class="btn btn-secondary">Buka Dashboard Data ➜</a>
+              <a href="aksi.html" class="btn btn-outline-dark">Coba Kalkulator Energi</a>
+            </div>
+          </div>
+
+          <div style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); border: 2px dashed #10b981; border-radius: var(--radius-md); padding: 28px; text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: 10px;">📊</div>
+            <h4 style="font-family: var(--font-heading); color: var(--primary-dark); margin-bottom: 8px;">Dashboard Analitik Fase 2</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+              Dilengkapi Chart Distribusi Kategori, Histogram Sebaran Skor, dan Tabel 18 Rombel Interaktif.
+            </p>
+            <span class="badge badge-green">100% Interaktif & Responsif</span>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p><strong>Kelas Hemat Energi</strong> — Proyek Kolaboratif PPLG XI</p>
-      <p>Mata pelajaran terkait: PPLG, KIK, PABP, dan mapel pendukung lainnya.</p>
-      <p>© 2026 Kelompok Kelompok 10</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>⚡ GoSave</h3>
+          <p>
+            Proyek Kolaboratif Konservasi dan Penghematan Energi Kelompok 10 Siswa Kelas XI SMK Wikrama Bogor.
+            Menghubungkan mata pelajaran PPLG, KIK, PABP, dan mapel lainnya dalam solusi digital berkelanjutan.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigasi Halaman</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kampanye</a></li>
+            <li><a href="data.html">Data & Fakta (Fase 2)</a></li>
+            <li><a href="aksi.html">Aksi & Kalkulator</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Kontak & Informasi</h4>
+          <ul>
+            <li><span style="opacity: 0.85;">SMK Wikrama Bogor</span></li>
+            <li><span style="opacity: 0.85;">PPLG XI — Angkatan 2026</span></li>
+            <li><span style="opacity: 0.85;">Data: 636 Responden Terdata</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GoSave — Kelompok 10 PPLG XI SMK Wikrama Bogor. Semua Hak Cipta Dilindungi.</p>
+      </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
